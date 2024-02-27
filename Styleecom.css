@@ -1,0 +1,232 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+.container{
+    height:100vh;
+    width: 100%;
+    background-image:url('background.png');
+    background-position: center;
+    background-size: cover;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.navbar{
+    width: 100%;
+    height: 15vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    width: 8rem;
+    cursor: pointer;
+    animation: movedown 0.7s linear 1;
+    animation-delay: 1s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+
+@keyframes movedown{
+    0%{
+        transform: translateY(-6.25rem);
+        visibility: visible;
+    }
+    100%{
+        transform: translateY(0);
+        visibility: visible;
+    }
+}
+
+.cart{
+    width: 2.5rem;
+    cursor: pointer;
+    animation: movedown 0.7s linear 1;
+    animation-delay: 3s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+
+nav{
+    flex: 1;
+    padding-left: 3.75rem;
+    animation: movedown 0.7s linear 1;
+    animation-delay: 2s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0rem 1.25rem;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color:#333;
+
+}
+
+nav ul li a:hover{
+    color:whitesmoke;
+    background-image: linear-gradient(45deg,#87adfe,#ff77cd) ;
+    border: 1px solid #333; 
+    padding: 0.25rem 0.5rem; 
+    border-radius: 0.32rem;
+}
+
+.content h1{
+    font-size: 3.75rem;
+    font-weight: 100;
+    margin-top: 1.5rem;
+    margin-bottom: 0.9rem;
+    color:#232d60;
+}
+
+.content p{
+    font-size: 1.25rem;
+    color: #6a7199;
+}
+
+.content{
+    margin-left: 10%;
+    margin-top: 10%;
+    animation: moveright 0.7s linear 1;
+    animation-delay: 6s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+    width: 50%;
+
+}
+
+@keyframes moveright{
+    0%{
+        transform: translateX(-6.25rem);
+        visibility: visible;
+    }
+    100%{
+        transform: translateX(0);
+        visibility: visible;
+    }
+}
+.b1{
+    display:inline-block;
+    background:linear-gradient(45deg,#87adfe,#ff77cd);
+    border-radius: 0.375rem;
+    padding:0.625rem 1.25rem;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #fff;
+    box-shadow: 0.18rem 0.5rem 1.37rem rgba(94,28,68,0.15);
+    animation: movedown 0.7s linear 1;
+    animation-delay: 4s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+
+
+.content .btn{
+    display:inline-block;
+    background:linear-gradient(45deg,#87adfe,#ff77cd);
+    border-radius: 0.375rem;
+    padding: 0.625rem 1.25rem;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #fff;
+    box-shadow: 0.18rem 0.5rem 1.3rem rgba(94,28,68,0.15);
+}
+
+
+.arrow-icons{
+    margin-top: 2.5rem;
+    display:flex;
+}
+
+.arrow-icons img{
+    width: 2.5rem;
+    margin-right: 1.56rem;
+}
+.hero{
+    display: flex;
+  
+
+}
+.feature-img{
+    /* height: 90%; */
+    /* position: absolute;
+    bottom: 0;
+    right: 10rem; */
+    width: 40%; 
+    animation: zoomin 0.7s linear 1;
+    animation-delay: 5s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+
+
+}
+.feature-img img{
+    width: 100%;
+    height: 100%;
+
+
+}
+
+@keyframes zoomin{
+    0%{
+        transform: scale(0.5);
+        visibility: visible;
+    }
+    100%{
+        transform: scale(1);
+        visibility: visible;
+    }
+}
+
+.social-links{
+    transform: rotate(-90deg);
+    position:absolute;
+    left:-5rem;
+    bottom:11.25rem; 
+}
+
+.social-links a{
+    text-decoration:none;
+    color: #6a7199;
+    padding-right: 1.25rem;
+    font-size:0.87rem;
+    animation: movedown 0.7s linear 1;
+    animation-delay: 6s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 45px;
+}
+footer a{
+    
+    text-decoration: none;
+    color:#333;
+    font-size: 0.9rem;
+    animation: movedown 0.7s linear 1;
+    animation-delay: 7s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+
+@media  screen and (max-width: 600px) {
+    .hero{
+        flex-direction: column;
+    }
+    footer{
+        display: none;
+    }
+    
+}
